@@ -192,7 +192,7 @@
         iScroll = iPosition.now * oScrollbar.ratio;
         oContent.obj.css( sDirection, -iScroll );
         oThumb.obj.css( sDirection, iPosition.now );
-        oWrapper.obj.trigger('tinyscrollbar:dragend', [-iScroll, iPosition.now]);
+        oWrapper.trigger('tinyscrollbar:dragend', [-iScroll, iPosition.now]);
       }
     }
 
